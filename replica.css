@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.devraj{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* position: fixed; */
+}
+/* about : where the left hand side of out page starts */
+.about{  
+    height: 100vh;
+    width: 27vw;
+    background-color: whitesmoke;
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: static;
+/* static elements are not affected by the top left right or bottom properties or elements */
+    overflow: hidden;
+/* overflow property specifies what should the compiler do if the content overflows out of an element's box; the hidden part clips the content that overflows out of the box */
+/* position fixed से scroll करने पर भी हमारा जो अनुभाग है वो screen नहीं हटता। */
+/* increased page height beyond hundered to prevent overflow */
+}
+.camera{
+    display: flex;
+    flex-direction: row;    
+}
+.photo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+}
+.text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1rem;
+}
+.about .text2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    /* font-weight: 400 !important; */
+    /* color: blue; */
+}
+.text2 h2{
+    font-weight: 700;
+}
+.about .text3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 300;
+    padding-bottom: 2.5rem; 
+}
+.text3 h4{
+   font-weight: 400;
+}
+/* text और फिर hx, ये हम अलग से {} बनाके इसीलिए लिख रहे हैं ताकि compiler को बोहोत सारी properties एक साथ ना पढ़ना पड़े।  */
+.MENU{
+    display: flex;
+    flex-direction: row;    
+    margin-top: 1.5rem;
+}
+/* अब यहाँ hover के साथ खेल। */
+.MENU:hover{
+     background-color: bisque;
+     cursor: all-scroll;
+}
+
+.textBar{
+    padding-left: 0.75rem;
+}
+.home{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.75rem;
+    margin-left: 0.3rem;
+    margin-bottom: 0.75rem;
+ }
+ .home:hover{
+    background-color: bisque;
+    cursor: pointer;
+ }
+ .search{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.75rem;
+    padding-left: 0.3rem;
+    margin-bottom: 0.75rem;
+ }
+ /* मानलो कि बस text hover करना है तो उसके निर्देश नीचे दिए हुए हैं। line no. 101 से 104*/
+ /* और रंग-बिरंगा hover चाहिए तो line no. 101 पे ध्यान दें। li.gr. में 90deg. लिखो और रंग भरना चालू करो  */
+ .search:hover{
+    background: linear-gradient(50deg, #c88b8b, #0e11c1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+ }
+ /* खेल बंद */
+ .reels{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.75rem;
+    padding-left: 0.3rem;
+    margin-bottom: 0.75rem;
+ }
+ .shop{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.3rem;
+    margin-bottom: 0.5rem;
+ }
+/* main : this is where the right hand side of page starts*/
+.main{
+    height: 100vh;
+    background-color: white;
+    padding-left: 2rem;
+}
+.searchBar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: grey;
+/* position reltive : thats a new function I have had to use, my code was not responding to justify-content */
+    position: relative;
+    left: 0;
+    height: 45px;
+    width: 200px; 
+    border-radius: 0.8rem;
+/* height, width and border : properties of the box I have made for the searchbar */
+    margin-top: 1rem;
+    margin-bottom: 2.25rem;
+    margin-left: 2rem;
+}
+/* margin and padding has been used extensivly in this code-source to create distances between the elements for the purpose of aesthetic harmony */
+.story{
+    margin-left: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.storyimago{
+    margin-left: 1.5rem;
+}
+.feed{
+    margin-left: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0.5rem;
+}
+.posts{
+    columns: 3;
+}
+/* post5 का html code देखलिए एक बेर पतो पद जाएगी। */
+.post5 .pathos{
+    margin-left: 15vw;
+}
