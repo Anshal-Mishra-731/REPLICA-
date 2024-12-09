@@ -133,13 +133,17 @@
 /* position reltive : thats a new function I have had to use, my code was not responding to justify-content */
     position: relative;
     left: 0;
-    height: 45px;
+    height: 35px;
     width: 200px; 
-    border-radius: 0.8rem;
+    border-radius: 0.6rem;
 /* height, width and border : properties of the box I have made for the searchbar */
     margin-top: 1rem;
     margin-bottom: 2.25rem;
     margin-left: 2rem;
+}
+.searchImg{
+    width: 2rem;
+    padding: 0.2rem;
 }
 /* margin and padding has been used extensivly in this code-source to create distances between the elements for the purpose of aesthetic harmony */
 .story{
